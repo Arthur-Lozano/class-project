@@ -1,0 +1,14 @@
+#logo {
+    width: 50%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid red;
+  }
+
+  body{
+      background-color: black;
+      color: blanchedalmond;
+      
+  }
+
