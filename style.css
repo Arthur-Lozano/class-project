@@ -1,14 +1,74 @@
 #logo {
-    width: 50%;
-    height: 200px;
+    max-width: 25%;
+    height: auto;
     background-repeat: no-repeat;
     background-size: contain;
-    border: 1px solid red;
   }
+        nav {
 
-  body{
-      background-color: black;
-      color: blanchedalmond;
-      
-  }
+            float: horizontal;
 
+            }
+
+        
+
+            .dot {
+                width: 100%;
+                height: auto;
+                display: inline;
+              }
+            ul, li {
+                list-style-type: none;
+                margin: 10px;
+                padding: 10px;
+                display: inline-flex;
+                background-color: yellow;
+                border-radius: 20px;
+                float: right;
+              }
+
+              .active {
+                background-color:grey;
+                color: white;
+              }
+
+              li a.active {
+                background-color: #4CAF50;
+                color: white;
+              }
+              
+              li a:hover:not(.active) {
+                background-color: #555;
+                color: white;
+              }
+
+                body {
+                    background-color: #71eeb8;      
+                }
+
+                    main {
+                        color: black;
+                    }
+
+                        section {
+                            width: 940px;
+                            text-align: center;
+                        }
+
+                    article {
+                        width: 300px;
+                        display: inline-block;
+                    }
+
+                        footer ul {
+                            width: 100%;
+                            display: inline;
+                            margin-left: 60px;
+                        }
+
+                            footer li {
+                                width: 100px;
+                                padding: 5px;
+                                margin: 5px;
+                                text-align: center;
+                            }
