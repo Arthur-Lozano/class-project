@@ -1,74 +1,132 @@
+#wrapper {
+  min-width: 300px; /* 100px x3 = 300 */
+  overflow:scroll;
+}
+
 #logo {
-    max-width: 25%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: contain;
+  height: 190px;
+  margin-left: 50px; /*Negative sign makes the logo go left but take it away and it goes right*/
+  padding: 0px;
+  margin: 0px;
   }
-        nav {
 
-            float: horizontal;
+  /*NavBar*/
+  /* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: red; /*block with logo*/
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0px; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
 
-            }
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #3106ee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-        
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
 
-            .dot {
-                width: 100%;
-                height: auto;
-                display: inline;
-              }
-            ul, li {
-                list-style-type: none;
-                margin: 10px;
-                padding: 10px;
-                display: inline-flex;
-                background-color: yellow;
-                border-radius: 20px;
-                float: right;
-              }
+.dot {
+  width: 100%;
+ -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
 
-              .active {
-                background-color:grey;
-                color: white;
-              }
+ul, li {   /*Block around links*/
+  margin: 10px;
+  margin-left: 20px;
+  padding: 10px;
+  display: inherit;
+  background-color: yellow;
+  border-radius: 20px;
+  float: left;
+}
 
-              li a.active {
-                background-color: #4CAF50;
-                color: white;
-              }
-              
-              li a:hover:not(.active) {
-                background-color: #555;
-                color: white;
-              }
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
 
-                body {
-                    background-color: #71eeb8;      
-                }
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
 
-                    main {
-                        color: black;
-                    }
+.active {
+  background-color:grey;
+  color: white;
+}
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
 
-                        section {
-                            width: 940px;
-                            text-align: center;
+/*end nav*/
+
+
+      html, body {
+        margin: 0;
+        height: 100%; /*Ensures body includes all content*/
+        border-style: dashed;
+        border-width: 3px;
+        border-color: indigo;
+        /*position: fixed; NEED TO FIND A WAY TO FIX BODIES BORDER*/
+    }
+
+      /*.nav {
+        border-style: dashed;
+        border-width: 3px;
+        background-color: rgb(27, 16, 16);
+        position: relative; /* Fixes nav bar across entire screen instead of inside body (fixed~across the screen, relative is within the body*/
+
+      /* An attempt to adjust the header but instead went with navbar css edits header {
+        border-style: dashed;
+        border-width: 3px;
+        background-color:yellow;
+        position: fixed; /* Fixes nav bar across entire screen instead of inside body (fixed~across the screen, relative is within the body*/
+      
+                        
+
+                        #foot {
+                          width: 100%; 
+                          background-color: sienna;
+                          text-align: center;
+                          height: 50px;
                         }
 
-                    article {
-                        width: 300px;
-                        display: inline-block;
-                    }
-
                         footer ul {
-                            width: 100%;
                             display: inline;
                             margin-left: 60px;
                         }
-
+                        
                             footer li {
                                 width: 100px;
                                 padding: 5px;
                                 margin: 5px;
-                                text-align: center;
+                                text-align: left;
                             }
+
+                
+                          .phobos{
+                            width: 300px;
+                            height: 400px;
+                            padding-top: 500px;
+                            padding-bottom: 400px;
+                          }
+
+                          .one-edge-shadow {
+                            box-shadow: 0 8px 6px -6px black;
+                          }
+
+                
