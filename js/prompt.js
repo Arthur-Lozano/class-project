@@ -8,6 +8,11 @@ if (userAge === 17)
     text = ("Sorry, you're too young!");
 } 
 else if (userAge > 17) {
-    text = ("Enter my site!");}
+    text = ("Enter my site!");
     
-document.write(userAge);
+//don't forget to return it
+return document.write(userAge);}
+
+
+//Below calls the function
+userAge();
