@@ -1,18 +1,19 @@
 'use strict'; 
 
 
-var userAge = prompt ("Please enter your age")
+function wantIn() {
+var userAge = prompt ("Would you like to enter? Type yes or no")
 
-if (userAge === 17) 
+if (userAge == 'yes') 
 {
-    text = ("Sorry, you're too young!");
+    text = ("Welcome!");
 } 
-else if (userAge > 17) {
-    text = ("Enter my site!");
+else if (userAge == no) {
+    text = ("Adios!");
     
 //don't forget to return it
 return document.write(userAge);}
-
+}
 
 //Below calls the function
-userAge();
+wantIn();
