@@ -1,6 +1,34 @@
 'use strict';
 
+function wannaParty () {
+
 var userAct = prompt ('Ready to have fun? ' +  'yes or no?');
+var answer;
+  
+
+if (userAct == 'yes') {
+    answer = ('Glad your answer was YES');
+}
+
+else if (userAct == 'no') {
+    answer =  ('Sorry your answer was no');
+}
+
+else {
+    answer = 'Maybe next time!';
+  }
+  return document.write('<h1>'+ answer + '</h1');
+}
+
+ wannaParty();
+
+
+
+
+
+
+
+/*var userAct = prompt ('Ready to have fun? ' +  'yes or no?');
 
 
 if (userAct == 'yes') {
@@ -14,9 +42,20 @@ else if (userAct == 'no') {
 else {
     document.write('<h2>' + 'Maybe next time! ' + '<h2>');
 }
+*/
 
+/*
 
+var sleepCheck = function(numHours) {
+  if (numHours >= 8) {
+    return "You're getting plenty of sleep! Maybe even too much!";
+  } else if(numHours < 8) {
+    return "Get some more shut eye!";
+  }
+}
+sleepCheck(10);
 
+*/
 /*
 'use strict'; 
 
