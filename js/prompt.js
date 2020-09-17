@@ -12,9 +12,9 @@ function wannaParty(){
   }
 
   if (userAct === "1") {
-      answer = '<img src = "../images/pic1.jpg">'; // insert pics
+      answer = '<img src = "images/pic1.jpg">'; // insert pics
   } else if (userAct === "2") {
-      answer =  '<img src = "../images/pic2.jpg">'; // insert pics
+      answer =  '<img src = "images/pic2.jpg">'; // insert pics
   }
   console.log("answer", answer);
   return answer;
